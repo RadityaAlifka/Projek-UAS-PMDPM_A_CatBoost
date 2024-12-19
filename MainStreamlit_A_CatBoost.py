@@ -17,7 +17,7 @@ st.set_page_config(
 @st.cache_resource
 def load_model_from_path():
     try:
-        model = load_model(BestModel_googlenet_CatBoost.h5)
+        model = load_model(r'BestModel_googlenet_CatBoost.h5')
         return model
     except Exception as e:
         st.error(f"Error loading model: {str(e)}")
