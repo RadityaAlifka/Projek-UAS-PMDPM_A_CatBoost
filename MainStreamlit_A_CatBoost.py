@@ -118,7 +118,7 @@ def main():
                     
                     # Display original image
                     with col1:
-                        st.image(image, caption=f'Image {idx + 1}: {uploaded_file.name}', use_column_width=True)
+                        st.image(image, caption=f'Image {idx + 1}: {uploaded_file.name}', use_container_width=True)
                     
                     # Get prediction
                     predicted_class, confidence, scores = predict_image(model, img_copy, class_names)
